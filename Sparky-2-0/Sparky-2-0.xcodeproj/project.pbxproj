@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F483E721F9FBEC200146367 /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F483E711F9FBEC200146367 /* StationCell.swift */; };
 		0F80DB6A1F9E8A460083F26B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F80DB691F9E8A460083F26B /* AppDelegate.swift */; };
 		0F80DB6C1F9E8A460083F26B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F80DB6B1F9E8A460083F26B /* ViewController.swift */; };
 		0F80DB6F1F9E8A460083F26B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F80DB6D1F9E8A460083F26B /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F483E711F9FBEC200146367 /* StationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationCell.swift; sourceTree = "<group>"; };
 		0F80DB661F9E8A460083F26B /* Sparky-2-0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sparky-2-0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F80DB691F9E8A460083F26B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F80DB6B1F9E8A460083F26B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				0F80DB751F9E8A460083F26B /* LaunchScreen.storyboard */,
 				0F80DB781F9E8A460083F26B /* Info.plist */,
 				0F80DB701F9E8A460083F26B /* Sparky_2_0.xcdatamodeld */,
+				0F483E711F9FBEC200146367 /* StationCell.swift */,
 			);
 			path = "Sparky-2-0";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				0F80DB6C1F9E8A460083F26B /* ViewController.swift in Sources */,
 				0F80DB721F9E8A460083F26B /* Sparky_2_0.xcdatamodeld in Sources */,
+				0F483E721F9FBEC200146367 /* StationCell.swift in Sources */,
 				0F80DB6A1F9E8A460083F26B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +310,7 @@
 				0F80DB7D1F9E8A460083F26B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
