@@ -102,10 +102,17 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
     @IBAction func FindStationPressed(_ sender: Any)
     {
+        performSegue(withIdentifier: "segueToDetailView", sender: self)
         /*
         UIView.animate(withDuration: 20, animations: {
             self.waterFactsLabel.center = CGPoint(x: self.waterFactsLabel.center.x-200, y:self.waterFactsLabel.center.y)
         })    }*/
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //myIndex = indexPath.row
+        performSegue(withIdentifier: "segueToDetailView", sender: self)
+        
     }
     
 }

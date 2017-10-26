@@ -14,6 +14,8 @@
 		0F80DB721F9E8A460083F26B /* Sparky_2_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F80DB701F9E8A460083F26B /* Sparky_2_0.xcdatamodeld */; };
 		0F80DB741F9E8A460083F26B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F80DB731F9E8A460083F26B /* Assets.xcassets */; };
 		0F80DB771F9E8A460083F26B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F80DB751F9E8A460083F26B /* LaunchScreen.storyboard */; };
+		0FBC38D81FA2887A00CA37F5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC38D71FA2887A00CA37F5 /* DetailViewController.swift */; };
+		0FBC38DA1FA291BE00CA37F5 /* DirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC38D91FA291BE00CA37F5 /* DirectionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		0F80DB731F9E8A460083F26B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F80DB761F9E8A460083F26B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F80DB781F9E8A460083F26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FBC38D71FA2887A00CA37F5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0FBC38D91FA291BE00CA37F5 /* DirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				0F80DB691F9E8A460083F26B /* AppDelegate.swift */,
 				0F80DB6B1F9E8A460083F26B /* ViewController.swift */,
 				0F80DB6D1F9E8A460083F26B /* Main.storyboard */,
+				0FBC38D91FA291BE00CA37F5 /* DirectionsViewController.swift */,
+				0FBC38D71FA2887A00CA37F5 /* DetailViewController.swift */,
 				0F80DB731F9E8A460083F26B /* Assets.xcassets */,
 				0F80DB751F9E8A460083F26B /* LaunchScreen.storyboard */,
 				0F80DB781F9E8A460083F26B /* Info.plist */,
@@ -145,7 +151,9 @@
 			files = (
 				0F80DB6C1F9E8A460083F26B /* ViewController.swift in Sources */,
 				0F80DB721F9E8A460083F26B /* Sparky_2_0.xcdatamodeld in Sources */,
+				0FBC38D81FA2887A00CA37F5 /* DetailViewController.swift in Sources */,
 				0F483E721F9FBEC200146367 /* StationCell.swift in Sources */,
+				0FBC38DA1FA291BE00CA37F5 /* DirectionsViewController.swift in Sources */,
 				0F80DB6A1F9E8A460083F26B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
