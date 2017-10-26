@@ -16,6 +16,10 @@
 		0F80DB771F9E8A460083F26B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F80DB751F9E8A460083F26B /* LaunchScreen.storyboard */; };
 		0FBC38D81FA2887A00CA37F5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC38D71FA2887A00CA37F5 /* DetailViewController.swift */; };
 		0FBC38DA1FA291BE00CA37F5 /* DirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC38D91FA291BE00CA37F5 /* DirectionsViewController.swift */; };
+		0FBC38DD1FA2969B00CA37F5 /* WaterStation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC38DB1FA2969B00CA37F5 /* WaterStation+CoreDataClass.swift */; };
+		0FBC38DE1FA2969B00CA37F5 /* WaterStation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC38DC1FA2969B00CA37F5 /* WaterStation+CoreDataProperties.swift */; };
+		0FBC38E01FA2988E00CA37F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FBC38DF1FA2988E00CA37F5 /* GoogleService-Info.plist */; };
+		BF52EBD937E861004B13A187 /* Pods_Sparky_2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31ABFFEC273AFB9050C5384F /* Pods_Sparky_2_0.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,12 @@
 		0F80DB781F9E8A460083F26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FBC38D71FA2887A00CA37F5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0FBC38D91FA291BE00CA37F5 /* DirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewController.swift; sourceTree = "<group>"; };
+		0FBC38DB1FA2969B00CA37F5 /* WaterStation+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterStation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0FBC38DC1FA2969B00CA37F5 /* WaterStation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterStation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0FBC38DF1FA2988E00CA37F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		31ABFFEC273AFB9050C5384F /* Pods_Sparky_2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sparky_2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		655B11E69EA79A0DF8E55D74 /* Pods-Sparky-2-0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sparky-2-0.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sparky-2-0/Pods-Sparky-2-0.release.xcconfig"; sourceTree = "<group>"; };
+		8951E0F57577E23A08CA36F9 /* Pods-Sparky-2-0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sparky-2-0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sparky-2-0/Pods-Sparky-2-0.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF52EBD937E861004B13A187 /* Pods_Sparky_2_0.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +59,8 @@
 			children = (
 				0F80DB681F9E8A460083F26B /* Sparky-2-0 */,
 				0F80DB671F9E8A460083F26B /* Products */,
+				9D43867E56E24FC727F867A6 /* Pods */,
+				5344D7885B90139E04DD67F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +75,9 @@
 		0F80DB681F9E8A460083F26B /* Sparky-2-0 */ = {
 			isa = PBXGroup;
 			children = (
+				0FBC38DF1FA2988E00CA37F5 /* GoogleService-Info.plist */,
+				0FBC38DB1FA2969B00CA37F5 /* WaterStation+CoreDataClass.swift */,
+				0FBC38DC1FA2969B00CA37F5 /* WaterStation+CoreDataProperties.swift */,
 				0F80DB691F9E8A460083F26B /* AppDelegate.swift */,
 				0F80DB6B1F9E8A460083F26B /* ViewController.swift */,
 				0F80DB6D1F9E8A460083F26B /* Main.storyboard */,
@@ -76,6 +92,23 @@
 			path = "Sparky-2-0";
 			sourceTree = "<group>";
 		};
+		5344D7885B90139E04DD67F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31ABFFEC273AFB9050C5384F /* Pods_Sparky_2_0.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D43867E56E24FC727F867A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8951E0F57577E23A08CA36F9 /* Pods-Sparky-2-0.debug.xcconfig */,
+				655B11E69EA79A0DF8E55D74 /* Pods-Sparky-2-0.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F80DB7B1F9E8A460083F26B /* Build configuration list for PBXNativeTarget "Sparky-2-0" */;
 			buildPhases = (
+				4F1F03D39569AEC10D083BAA /* [CP] Check Pods Manifest.lock */,
 				0F80DB621F9E8A460083F26B /* Sources */,
 				0F80DB631F9E8A460083F26B /* Frameworks */,
 				0F80DB641F9E8A460083F26B /* Resources */,
+				96554A75675D9B0E6EFD9C7F /* [CP] Embed Pods Frameworks */,
+				4F04D139D801FE1C16D98AAB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F80DB771F9E8A460083F26B /* LaunchScreen.storyboard in Resources */,
+				0FBC38E01FA2988E00CA37F5 /* GoogleService-Info.plist in Resources */,
 				0F80DB741F9E8A460083F26B /* Assets.xcassets in Resources */,
 				0F80DB6F1F9E8A460083F26B /* Main.storyboard in Resources */,
 			);
@@ -144,16 +181,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F04D139D801FE1C16D98AAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sparky-2-0/Pods-Sparky-2-0-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F1F03D39569AEC10D083BAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sparky-2-0-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96554A75675D9B0E6EFD9C7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sparky-2-0/Pods-Sparky-2-0-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sparky-2-0/Pods-Sparky-2-0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0F80DB621F9E8A460083F26B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FBC38DE1FA2969B00CA37F5 /* WaterStation+CoreDataProperties.swift in Sources */,
 				0F80DB6C1F9E8A460083F26B /* ViewController.swift in Sources */,
 				0F80DB721F9E8A460083F26B /* Sparky_2_0.xcdatamodeld in Sources */,
 				0FBC38D81FA2887A00CA37F5 /* DetailViewController.swift in Sources */,
 				0F483E721F9FBEC200146367 /* StationCell.swift in Sources */,
 				0FBC38DA1FA291BE00CA37F5 /* DirectionsViewController.swift in Sources */,
+				0FBC38DD1FA2969B00CA37F5 /* WaterStation+CoreDataClass.swift in Sources */,
 				0F80DB6A1F9E8A460083F26B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +370,7 @@
 		};
 		0F80DB7C1F9E8A460083F26B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8951E0F57577E23A08CA36F9 /* Pods-Sparky-2-0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 952ZRHC9X6;
@@ -288,6 +384,7 @@
 		};
 		0F80DB7D1F9E8A460083F26B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 655B11E69EA79A0DF8E55D74 /* Pods-Sparky-2-0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 952ZRHC9X6;
