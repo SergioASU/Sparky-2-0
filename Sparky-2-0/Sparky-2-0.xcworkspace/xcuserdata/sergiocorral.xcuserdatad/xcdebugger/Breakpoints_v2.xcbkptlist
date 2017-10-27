@@ -6,7 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sparky-2-0/AppDelegate.swift"
@@ -15,6 +15,68 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
             endingLineNumber = "11">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sparky_2_0.AppDelegate.__deallocating_deinit"
+                  moduleName = "Sparky-2-0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergiocorral/Programming/Sparky-2-0/Sparky-2-0/Sparky-2-0/Sparky-2-0/AppDelegate.swift"
+                  timestampString = "530752204.490326"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sparky_2_0.AppDelegate.init () -&gt; Sparky_2_0.AppDelegate"
+                  moduleName = "Sparky-2-0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergiocorral/Programming/Sparky-2-0/Sparky-2-0/Sparky-2-0/Sparky-2-0/AppDelegate.swift"
+                  timestampString = "530752204.538523"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sparky_2_0.AppDelegate.__allocating_init () -&gt; Sparky_2_0.AppDelegate"
+                  moduleName = "Sparky-2-0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergiocorral/Programming/Sparky-2-0/Sparky-2-0/Sparky-2-0/Sparky-2-0/AppDelegate.swift"
+                  timestampString = "530752204.541732"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Sparky-2-0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergiocorral/Programming/Sparky-2-0/Sparky-2-0/Sparky-2-0/Sparky-2-0/AppDelegate.swift"
+                  timestampString = "530752204.545265"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

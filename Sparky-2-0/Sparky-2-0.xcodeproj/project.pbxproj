@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0F483E721F9FBEC200146367 /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F483E711F9FBEC200146367 /* StationCell.swift */; };
+		0F6591441FA3B9AD005BD7F1 /* WaterStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6591431FA3B9AD005BD7F1 /* WaterStation.swift */; };
+		0F6591461FA3BB53005BD7F1 /* WaterStationDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6591451FA3BB53005BD7F1 /* WaterStationDatabase.swift */; };
 		0F80DB6A1F9E8A460083F26B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F80DB691F9E8A460083F26B /* AppDelegate.swift */; };
 		0F80DB6C1F9E8A460083F26B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F80DB6B1F9E8A460083F26B /* ViewController.swift */; };
 		0F80DB6F1F9E8A460083F26B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F80DB6D1F9E8A460083F26B /* Main.storyboard */; };
@@ -16,14 +18,14 @@
 		0F80DB771F9E8A460083F26B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F80DB751F9E8A460083F26B /* LaunchScreen.storyboard */; };
 		0FBC38D81FA2887A00CA37F5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC38D71FA2887A00CA37F5 /* DetailViewController.swift */; };
 		0FBC38DA1FA291BE00CA37F5 /* DirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC38D91FA291BE00CA37F5 /* DirectionsViewController.swift */; };
-		0FBC38DD1FA2969B00CA37F5 /* WaterStation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC38DB1FA2969B00CA37F5 /* WaterStation+CoreDataClass.swift */; };
-		0FBC38DE1FA2969B00CA37F5 /* WaterStation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC38DC1FA2969B00CA37F5 /* WaterStation+CoreDataProperties.swift */; };
 		0FBC38E01FA2988E00CA37F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FBC38DF1FA2988E00CA37F5 /* GoogleService-Info.plist */; };
 		BF52EBD937E861004B13A187 /* Pods_Sparky_2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31ABFFEC273AFB9050C5384F /* Pods_Sparky_2_0.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F483E711F9FBEC200146367 /* StationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationCell.swift; sourceTree = "<group>"; };
+		0F6591431FA3B9AD005BD7F1 /* WaterStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterStation.swift; sourceTree = "<group>"; };
+		0F6591451FA3BB53005BD7F1 /* WaterStationDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterStationDatabase.swift; sourceTree = "<group>"; };
 		0F80DB661F9E8A460083F26B /* Sparky-2-0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sparky-2-0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F80DB691F9E8A460083F26B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F80DB6B1F9E8A460083F26B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +36,6 @@
 		0F80DB781F9E8A460083F26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FBC38D71FA2887A00CA37F5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0FBC38D91FA291BE00CA37F5 /* DirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewController.swift; sourceTree = "<group>"; };
-		0FBC38DB1FA2969B00CA37F5 /* WaterStation+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterStation+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0FBC38DC1FA2969B00CA37F5 /* WaterStation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterStation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0FBC38DF1FA2988E00CA37F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		31ABFFEC273AFB9050C5384F /* Pods_Sparky_2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sparky_2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		655B11E69EA79A0DF8E55D74 /* Pods-Sparky-2-0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sparky-2-0.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sparky-2-0/Pods-Sparky-2-0.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,10 +76,10 @@
 			isa = PBXGroup;
 			children = (
 				0FBC38DF1FA2988E00CA37F5 /* GoogleService-Info.plist */,
-				0FBC38DB1FA2969B00CA37F5 /* WaterStation+CoreDataClass.swift */,
-				0FBC38DC1FA2969B00CA37F5 /* WaterStation+CoreDataProperties.swift */,
 				0F80DB691F9E8A460083F26B /* AppDelegate.swift */,
 				0F80DB6B1F9E8A460083F26B /* ViewController.swift */,
+				0F6591431FA3B9AD005BD7F1 /* WaterStation.swift */,
+				0F6591451FA3BB53005BD7F1 /* WaterStationDatabase.swift */,
 				0F80DB6D1F9E8A460083F26B /* Main.storyboard */,
 				0FBC38D91FA291BE00CA37F5 /* DirectionsViewController.swift */,
 				0FBC38D71FA2887A00CA37F5 /* DetailViewController.swift */,
@@ -223,11 +223,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Sparky-2-0/Pods-Sparky-2-0-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,14 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FBC38DE1FA2969B00CA37F5 /* WaterStation+CoreDataProperties.swift in Sources */,
 				0F80DB6C1F9E8A460083F26B /* ViewController.swift in Sources */,
 				0F80DB721F9E8A460083F26B /* Sparky_2_0.xcdatamodeld in Sources */,
+				0F6591441FA3B9AD005BD7F1 /* WaterStation.swift in Sources */,
 				0FBC38D81FA2887A00CA37F5 /* DetailViewController.swift in Sources */,
 				0F483E721F9FBEC200146367 /* StationCell.swift in Sources */,
 				0FBC38DA1FA291BE00CA37F5 /* DirectionsViewController.swift in Sources */,
-				0FBC38DD1FA2969B00CA37F5 /* WaterStation+CoreDataClass.swift in Sources */,
 				0F80DB6A1F9E8A460083F26B /* AppDelegate.swift in Sources */,
+				0F6591461FA3BB53005BD7F1 /* WaterStationDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

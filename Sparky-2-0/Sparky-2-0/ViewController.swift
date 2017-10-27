@@ -8,18 +8,33 @@
 
 import UIKit
 import CoreData
+import Firebase
+import FirebaseDatabase
 
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource{
     
     @IBOutlet weak var stationTable: UITableView!
     @IBOutlet weak var waterFactsLabel: UILabel!
     
+    let rootRef = Database.database().reference()
+    var refWater: DatabaseReference!
     var switchInt: Int = 0
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        refWater = Database.database().reference().child("stations");
         
+        let key = refWater.childByAutoId().key
+        
+        //creating artist with the given values
+        let station = ["id":key,
+                      "stationName": "Test3",
+                      "stationDescription": "This is a test too3"
+        ]
+        
+        //adding the artist inside the generated unique key
+        refWater.child(key).setValue(station)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
