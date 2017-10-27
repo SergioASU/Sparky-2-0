@@ -21,7 +21,6 @@ class StationCell: UITableViewCell
      *   stationRatingLabel will show rating out of 5
      */
     
-    @IBOutlet weak var waterPicture: UIImageView!
     @IBOutlet weak var stationNameLabel: UILabel!
     @IBOutlet weak var stationRatingLabel: UILabel!
     

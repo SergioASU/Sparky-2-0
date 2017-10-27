@@ -19,21 +19,21 @@ class WaterStationDatabase
     
     func addWaterStation(w:WaterStation)
     {
-        waterStationArray.append(WaterStation)
+        waterStationArray.append(w)
     }
     
-    func search(n:name)->Int
+    func search(n:String)->Int
     {
         var index = -1
         var count = 0;
         for station in waterStationArray
         {
-            if (station.name == name)
+            if (station.name == n)
             {
                 index = count
                 break
             }
-            count++
+            count = count + 1
         }
         
         return index

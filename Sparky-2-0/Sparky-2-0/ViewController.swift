@@ -20,21 +20,60 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     var refWater: DatabaseReference!
     var switchInt: Int = 0
     
+    var waterStationRepo: WaterStationDatabase = WaterStationDatabase()
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
         refWater = Database.database().reference().child("stations");
         
         let key = refWater.childByAutoId().key
         
         //creating artist with the given values
-        let station = ["id":key,
-                      "stationName": "Test3",
-                      "stationDescription": "This is a test too3"
-        ]
+        let station = ["stationKey": key,
+                       "stationName":"Hayden Library Concord",
+                       "stationDesc": "Underground Level",
+                       "stationRating": "4",
+                       "stationLong": "878",
+                       "stationLat" : "726.462"
+        ] as [String : Any]
         
         //adding the artist inside the generated unique key
         refWater.child(key).setValue(station)
+        
+        //observing the data changes
+        refWater.observe(DataEventType.value, with: { (snapshot) in
+            
+            //if the reference have some values
+            if snapshot.childrenCount > 0 {
+                
+                //clearing the list
+                self.waterStationRepo.waterStationArray.removeAll()
+                
+                //iterating through all the values
+                for stations in snapshot.children.allObjects as! [DataSnapshot] {
+                    //getting values
+                    let stationObject = stations.value as? [String: AnyObject]
+                    let stationKey  = stationObject?["stationKey"]
+                    let stationName  = stationObject?["stationName"]
+                    let stationDesc = stationObject?["stationDesc"]
+                    let stationRating = stationObject?["stationRating"]
+                    let stationLong = stationObject?["stationLong"]
+                    let stationLat = stationObject?["stationLat"]
+                    
+                    //creating artist object with model and fetched values
+                    let station = WaterStation(k: stationKey as! String, n: stationName as! String, d: stationDesc as! String, r: stationRating as! String, lon: stationLong as! String, lat: stationLat as! String)
+                    
+                    //appending it to list
+                    self.waterStationRepo.addWaterStation(w: station)
+                }
+                
+                //reloading the tableview
+                self.stationTable.reloadData()
+            }
+        })
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -52,8 +91,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        //return places.places.count
-        return 0
+        return waterStationRepo.waterStationArray.count
     }
     
     func tableView(_ tableView: UITableView,
@@ -61,17 +99,14 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         -> UITableViewCell {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! StationCell
-          /*  let place = places.places[indexPath.row]
+            let station = waterStationRepo.waterStationArray[indexPath.row]
             cell.layer.borderWidth = 1.0
-            cell.nameLabel.text =
-                place.value(forKeyPath: "name") as? String
+            cell.stationNameLabel.text =
+                station.name
             
-            if let imageData = place.value(forKey: "picture") as? NSData {
-                if let image = UIImage(data:imageData as Data) {
-                    cell.cellImage.image = image
-                }
-            }
-            */
+            cell.stationRatingLabel.text = station.rating
+            
+            
             return cell
     }
     

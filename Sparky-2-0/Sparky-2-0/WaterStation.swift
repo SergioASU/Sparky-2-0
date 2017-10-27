@@ -13,11 +13,11 @@ class WaterStation
     var key: String? = nil
     var name: String? = nil
     var desc: String? = nil
-    var rating: Int? = nil
-    var locationLong: Double? = nil
-    var locationLat: Double? = nil
+    var rating: String? = nil
+    var locationLong: String? = nil
+    var locationLat: String? = nil
     
-    init(k:String, n:String, d:String,r:Int,lon:Double,lat:Double)
+    init(k:String, n:String, d:String,r:String,lon:String,lat:String)
     {
         key = k
         name = n
