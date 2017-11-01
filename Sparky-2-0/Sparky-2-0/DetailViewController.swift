@@ -10,8 +10,11 @@ import UIKit
 
 class DetailViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
 {
+    var station : WaterStation = WaterStation()
 
     @IBOutlet weak var ratingPicker: UIPickerView!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var descriptionOfStation: UITextView!
     
     let ratings = [0,1,2,3,4,5]
     
@@ -32,7 +35,8 @@ class DetailViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     override func viewDidLoad()
     {
-        super.viewDidLoad()
+        nameTextField.text = station.name
+        descriptionOfStation.text = station.desc
 
         // Do any additional setup after loading the view.
     }

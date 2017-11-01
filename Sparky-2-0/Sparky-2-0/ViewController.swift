@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         let key = refWater.childByAutoId().key
         
         //creating artist with the given values
-        let station = ["stationKey": key,
+       /* let station = ["stationKey": key,
                        "stationName":"Hayden Library Concord",
                        "stationDesc": "Underground Level",
                        "stationRating": "4",
@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         
         //adding the artist inside the generated unique key
         refWater.child(key).setValue(station)
-        
+        */
         //observing the data changes
         refWater.observe(DataEventType.value, with: { (snapshot) in
             
@@ -152,7 +152,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
     @IBAction func FindStationPressed(_ sender: Any)
     {
-        performSegue(withIdentifier: "segueToDetailView", sender: self)
+        //performSegue(withIdentifier: "segueToDetailView", sender: self)
         /*
         UIView.animate(withDuration: 20, animations: {
             self.waterFactsLabel.center = CGPoint(x: self.waterFactsLabel.center.x-200, y:self.waterFactsLabel.center.y)
@@ -160,10 +160,18 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //myIndex = indexPath.row
+        switchInt = indexPath.row
         performSegue(withIdentifier: "segueToDetailView", sender: self)
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+            let destinationVC = segue.destination as! DetailViewController
+            destinationVC.station = waterStationRepo.waterStationArray[switchInt]
+        
+    }
+
     
 }
 

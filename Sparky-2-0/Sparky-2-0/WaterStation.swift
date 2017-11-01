@@ -17,6 +17,7 @@ class WaterStation
     var locationLong: String? = nil
     var locationLat: String? = nil
     
+    init(){}
     init(k:String, n:String, d:String,r:String,lon:String,lat:String)
     {
         key = k

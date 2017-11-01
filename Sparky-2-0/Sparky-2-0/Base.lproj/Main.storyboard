@@ -163,6 +163,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="descriptionOfStation" destination="kMC-rC-Lzr" id="yaY-sG-tSe"/>
+                        <outlet property="nameTextField" destination="azs-IR-hCc" id="HVK-1w-hCG"/>
                         <outlet property="ratingPicker" destination="dfd-xr-8sf" id="kGo-T0-4Uj"/>
                         <segue destination="33z-Uj-zV0" kind="show" id="rfg-bJ-6H4"/>
                     </connections>
