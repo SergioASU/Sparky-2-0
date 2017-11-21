@@ -8,5 +8,6 @@ target 'Sparky-2-0' do
   # Pods for Sparky-2-0
 	pod 'Firebase/Core'
 	pod 'Firebase/Database'
+	pod 'Firebase/Storage'
 
 end

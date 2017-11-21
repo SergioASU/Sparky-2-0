@@ -28,6 +28,20 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>&quot;Need for directions&quot;</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>&quot;Used for directions&quot;</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
+	<key>NSCameraUsageDescription</key>
+	<string>&quot;This is required to take pictures&quot;</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>&quot;This is required to use pictures&quot;</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

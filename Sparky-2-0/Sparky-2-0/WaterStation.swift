@@ -16,9 +16,10 @@ class WaterStation
     var rating: String? = nil
     var locationLong: String? = nil
     var locationLat: String? = nil
+    var url: String? = nil
     
     init(){}
-    init(k:String, n:String, d:String,r:String,lon:String,lat:String)
+    init(k:String, n:String, d:String,r:String,lon:String,lat:String, u:String)
     {
         key = k
         name = n
@@ -26,5 +27,6 @@ class WaterStation
         rating = r
         locationLong = lon
         locationLat = lat
+        url = u
     }
 }
